@@ -201,6 +201,7 @@ view: dec2020 {
 
   dimension: state {
     type: string
+    map_layer_name: us_states
     sql: ${TABLE}.STATE ;;
   }
 
