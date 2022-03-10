@@ -32,7 +32,8 @@ view: state_pop {
 
   dimension: state {
     type: string
-    sql: ${TABLE}.State ;;
+    primary_key: yes
+    sql: ${TABLE}.State;;
   }
 
   measure: count {

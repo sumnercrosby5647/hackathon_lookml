@@ -29,4 +29,10 @@ explore: state_pop {}
 
 explore: vehicle_registrations {}
 
-explore: dec2020 {}
+explore: dec2020 {
+  join: state_pop{
+    type: left_outer
+    foreign_key: state
+    relationship: many_to_one
+  }
+}
