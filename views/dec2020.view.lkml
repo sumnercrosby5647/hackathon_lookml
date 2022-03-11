@@ -97,6 +97,7 @@ view: dec2020 {
       month,
       quarter,
       day_of_year,
+      month_name,
       day_of_week,
       hour_of_day,
       year
@@ -105,6 +106,11 @@ view: dec2020 {
   }
 
   dimension: give_way {
+    type: yesno
+    sql: ${TABLE}.GIVE_WAY ;;
+  }
+
+  dimension: month_day {
     type: yesno
     sql: ${TABLE}.GIVE_WAY ;;
   }
