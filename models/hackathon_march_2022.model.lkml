@@ -74,6 +74,10 @@ explore: dec2020 {
     type: left_outer
     relationship: one_to_one
     sql_on: ${state_codes.state_fips_code} = ${state_2017_census.geo_id} ;;
-
+  }
+  join: transp_spend {
+    type: left_outer
+    relationship: one_to_one
+    sql_on: ${state_codes.state_name} = ${transp_spend.state} ;;
   }
 }
