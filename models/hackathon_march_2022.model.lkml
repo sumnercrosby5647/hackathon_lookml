@@ -33,6 +33,8 @@ explore: edu_spend {}
 
 explore: transp_spend {}
 
+explore: beet_farm {}
+
 explore: human_capital_metrics {}
 
 explore: vehicle_registrations {}
