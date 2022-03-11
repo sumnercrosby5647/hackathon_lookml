@@ -27,6 +27,8 @@ persist_with: hackathon_march_2022_default_datagroup
 
 explore: state_pop {}
 
+explore: state_2017_census {}
+
 explore: edu_spend {}
 
 explore: transp_spend {}
