@@ -35,6 +35,14 @@ explore: human_capital_metrics {}
 
 explore: vehicle_registrations {}
 
+explore: state_codes {
+  join: transp_spend {
+    type: left_outer
+    foreign_key: state_codes.state_name
+    relationship: many_to_one
+  }
+}
+
 explore: dec2020 {
   join: state_pop{
     type: left_outer
@@ -51,7 +59,7 @@ explore: dec2020 {
     foreign_key: state
     relationship: many_to_one
   }
-  join: transp_spend {
+  join: state_codes {
     type: left_outer
     foreign_key: state
     relationship: many_to_one
