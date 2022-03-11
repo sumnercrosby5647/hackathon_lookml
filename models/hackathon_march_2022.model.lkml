@@ -70,4 +70,10 @@ explore: dec2020 {
     foreign_key: state
     relationship: many_to_one
   }
+  join: state_2017_census {
+    type: left_outer
+    relationship: one_to_one
+    sql_on: ${state_codes.state_fips_code} = ${state_2017_census.geo_id} ;;
+
+  }
 }
