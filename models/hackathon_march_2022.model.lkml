@@ -51,7 +51,7 @@ explore: state_codes {
     relationship:one_to_one}
 }
 
-explore: dec2020 {
+explore: dec2021 {
   join: state_pop{
     type: left_outer
     foreign_key: state
