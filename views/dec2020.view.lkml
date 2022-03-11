@@ -96,6 +96,9 @@ view: dec2020 {
       week,
       month,
       quarter,
+      day_of_year,
+      day_of_week,
+      hour_of_day,
       year
     ]
     sql: ${TABLE}.END_TIME ;;
