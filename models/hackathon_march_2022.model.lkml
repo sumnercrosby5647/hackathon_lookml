@@ -27,6 +27,10 @@ persist_with: hackathon_march_2022_default_datagroup
 
 explore: state_pop {}
 
+explore: edu_spend {}
+
+explore: transp_spend {}
+
 explore: human_capital_metrics {}
 
 explore: vehicle_registrations {}
@@ -38,6 +42,16 @@ explore: dec2020 {
     relationship: many_to_one
   }
   join: human_capital_metrics {
+    type: left_outer
+    foreign_key: state
+    relationship: many_to_one
+  }
+  join: edu_spend {
+    type: left_outer
+    foreign_key: state
+    relationship: many_to_one
+  }
+  join: transp_spend {
     type: left_outer
     foreign_key: state
     relationship: many_to_one
