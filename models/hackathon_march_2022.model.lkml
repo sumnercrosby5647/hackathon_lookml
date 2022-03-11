@@ -43,6 +43,10 @@ explore: state_codes {
     foreign_key: state_codes.state_name
     relationship: many_to_one
   }
+  join: state_2017_census{
+    type: left_outer
+    foreign_key: state_codes.state_fips_code
+    relationship:one_to_one}
 }
 
 explore: dec2020 {

@@ -597,6 +597,7 @@ view: state_2017_census {
   dimension: geo_id {
     type: string
     description: "US States Geoids"
+    primary_key: yes
     sql: ${TABLE}.geo_id ;;
   }
 
