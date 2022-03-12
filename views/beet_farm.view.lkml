@@ -89,6 +89,12 @@ view: beet_farm {
     sql: ${TABLE}.END_LNG ;;
   }
 
+  dimension: end_location {
+    type: location
+    sql_latitude:${TABLE}.END_LAT ;;
+    sql_longitude:${TABLE}.END_LNG ;;
+  }
+
   # Dates and timestamps can be represented in Looker using a dimension group of type: time.
   # Looker converts dates and timestamps to the specified timeframes within the dimension group.
 
@@ -188,6 +194,12 @@ view: beet_farm {
   dimension: start_lng {
     type: number
     sql: ${TABLE}.START_LNG ;;
+  }
+
+  dimension: start_location {
+    type: location
+    sql_latitude:${TABLE}.START_LAT ;;
+    sql_longitude:${TABLE}.START_LNG ;;
   }
 
   dimension_group: start {
